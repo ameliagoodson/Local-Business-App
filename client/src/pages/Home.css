@@ -6,31 +6,32 @@ Pale lavender: rgb(235,235,235)
 Medium orchid: rgb(177, 98, 197)
 */
 
-* {
-  font-family: "Raleway", sans-serif;
-}
-
 .jumbotron {
-  background-image: url(./Assets/zack-woolwine-QdaZPtzpA1Q-unsplash-smaller-wide.jpg);
+  background-image: url(./assets/jumbotron_1920x780.jpg);
   background-repeat: no-repeat;
   height: 70vh;
 }
 .heading {
   color: rgb(110, 42, 128);
   font-weight: bold;
-  font-size: 35px;
+  font-size: 38px;
+  font-family: "Raleway", sans-serif;
 }
 .home-text {
   color: rgb(177, 98, 197);
-  font-size: 25px;
+  font-size: 34px;
+  letter-spacing: 1px;
+  font-family: "Norican", cursive;
 }
 .btn-see {
   padding: 7px;
-  background-color: rgb(200, 237, 243);
+  background-color: rgb(67, 71, 71);
   border-radius: 10px;
   font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
 }
 .btn-see:hover {
-  background-color: white;
+  color: white;
   cursor: pointer;
 }
