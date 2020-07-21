@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import axios from "axios";
+import API from "../utils/API";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -19,11 +20,11 @@ const Contact = () => {
     console.log("hello");
     // When the form is submitted, prevent its default behavior, get recipes update the recipes state
     event.preventDefault();
-    axios.post("/api/sendemail", {
+    API.sendEmail({
       name: name,
       email: email,
       message: message,
-    });
+    }).then(console.log("whatever"));
     //implement the post route on server.js
   };
   return (
