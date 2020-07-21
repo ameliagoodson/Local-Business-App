@@ -1,37 +1,44 @@
-/* Colour palette
-Dark purple: rgb(110, 42, 128);
-Pale turquoise: rgb(200,237,243)
-Dark slate grey: rgb(39,56,64)
-Pale lavender: rgb(235,235,235)
-Medium orchid: rgb(177, 98, 197)
+/*COLOUR PALETTE
+Dark sienna: #2e0014
+Magenta dye: #d30c7b
+Light coral: #f29191
+Tea green: #bee7b8
+Honeydew: #ddf8e8
+light grey: #e1d4cb
 */
-
+body {
+  background-color: #ddf8e8;
+}
 .jumbotron {
   background-image: url(./assets/jumbotron_1920x780.jpg);
   background-repeat: no-repeat;
   height: 70vh;
 }
 .heading {
-  color: rgb(110, 42, 128);
+  color: #2e0014;
   font-weight: bold;
   font-size: 38px;
   font-family: "Raleway", sans-serif;
 }
 .home-text {
-  color: rgb(177, 98, 197);
-  font-size: 34px;
-  letter-spacing: 1px;
-  font-family: "Norican", cursive;
+  color: #2e0014;
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+  /* font-family: "Norican", cursive; */
 }
 .btn-see {
   padding: 7px;
-  background-color: rgb(67, 71, 71);
+  background-color: #ddf8e8;
+  color: #d30c7b;
+  width: 150px;
+  font-size: 25px;
   border-radius: 10px;
   font-weight: bold;
   letter-spacing: 1px;
   font-family: "Raleway", sans-serif;
+  border: solid #bee7b8 3px;
 }
-.btn-see:hover {
-  color: white;
-  cursor: pointer;
+.btn-see-link:hover {
+  text-decoration: none;
+  color: #d30c7b;
 }

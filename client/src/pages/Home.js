@@ -11,9 +11,8 @@ function Home() {
       <button className="btn-see">
         <Link
           to="/services"
-          className={
-            location.pathname === "/services" ? "nav-link active" : "nav-link"
-          }
+          className={location.pathname === "/services"}
+          className="btn-see-link"
         >
           Services
         </Link>

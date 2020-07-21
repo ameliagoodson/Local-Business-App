@@ -1,24 +1,44 @@
+/*COLOUR PALETTE
+Dark sienna: #2e0014
+Magenta dye: #d30c7b
+Light coral: #f29191
+Tea green: #bee7b8
+Honeydew: #ddf8e8
+*/
+
 /* Navigation bar  */
-nav {
-  background-color: #273840;
-  border-bottom: rgb(210, 175, 219) solid 3px;
-}
+
 .nav-heading {
   margin: left;
-  color: rgb(210, 175, 219);
+  color: #d30c7b;
   font-size: 27px;
   padding-top: 5px;
 }
 .nav-link {
-  color: rgb(210, 175, 219);
+  color: #e1d4cb;
   margin: 0 20px 0 20px;
   font-size: 20px;
 }
 .nav-item {
-  border-left: thistle solid 1px;
+  border-left: #ddf8e8 solid 1px;
   text-align: center;
 }
 
 .nav-link:hover {
   color: white;
+  border: none;
+}
+.nav-tabs,
+.nav-link,
+.nav-item,
+.nav-item.show,
+.nav-link.active {
+  background-color: #2e0014 !important;
+}
+.nav-link.active {
+  border: none;
+  color: #e1d4cb !important;
+}
+.nav {
+  border-bottom: 5px solid #d30c7b;
 }
