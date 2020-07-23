@@ -11,7 +11,7 @@ const Contact = () => {
   const handleNameChange = event => {
     const value = event.target.value;
     setName(value); //sets the name state with the value from the field
-    console.log(name); //NOT WORKING
+    console.log(name);
   };
 
   // do handle email change and handle text change
@@ -24,7 +24,7 @@ const Contact = () => {
       name: name,
       email: email,
       message: message,
-    }).then(console.log("whatever"));
+    });
     //implement the post route on server.js
   };
   return (

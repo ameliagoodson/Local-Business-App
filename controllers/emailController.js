@@ -17,7 +17,7 @@ module.exports = {
       to: "ameliajanegoodson@gmail.com", // list of receivers
       subject: "Node Contact Request", // Subject line
       text: "Hello world?", // plain text body
-      html: output, // html body
+      // html: output, // html body
     };
     // send mail with defined transport object
     transport.sendMail(mailOptions, (error, info) => {
