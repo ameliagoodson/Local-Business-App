@@ -9,8 +9,10 @@ module.exports = {
       port: 587,
       secure: false,
       auth: {
-        user: process.env.SMTP_USER, ///defined on Heroku
-        pass: process.env.SMTP_PASSWORD,
+        user: "ameliajanegoodson@gmail.com",
+        // process.env.SMTP_USER, ///defined on Heroku
+        pass: "Boo77Dog",
+        // process.env.SMTP_PASSWORD,
       },
     });
     // setup email data with unicode symbols
