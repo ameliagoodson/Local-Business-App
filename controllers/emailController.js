@@ -13,7 +13,8 @@ module.exports = {
     });
     // setup email data with unicode symbols
     let mailOptions = {
-      to: "ameliajanegoodson@gmail.com", // list of receivers
+      from: "ameliajanegoodson@gmail.com",
+      to: "amelia.goodson@hotmail.com", // list of receivers
       subject: "Node Contact Request", // Subject line
       text: "Hello world?", // plain text body
       // html: output, // html body
