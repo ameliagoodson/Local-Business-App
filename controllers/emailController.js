@@ -5,14 +5,10 @@ module.exports = {
   send: function (req, res) {
     // create reusable transporter object using the default SMTP transport - TAKEN FROM NODEMAILER DOCS
     var transport = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false,
+      service: "SendGrid",
       auth: {
         user: "ameliajanegoodson@gmail.com",
-        // process.env.SMTP_USER, ///defined on Heroku
-        pass: "Boo77Dog",
-        // process.env.SMTP_PASSWORD,
+        pass: "bootcamp2020amelia",
       },
     });
     // setup email data with unicode symbols
