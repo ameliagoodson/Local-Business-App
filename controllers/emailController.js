@@ -5,11 +5,12 @@ module.exports = {
   send: function (req, res) {
     // create reusable transporter object using the default SMTP transport - TAKEN FROM NODEMAILER DOCS
     var transport = nodemailer.createTransport({
-      host: "smtp.mailtrap.io",
-      port: 2525,
+      host: "smtp.gmail.com",
+      port: 587,
+      secure: false,
       auth: {
-        user: "49b90f37e8fcd9",
-        pass: "a493c0071f14ac",
+        user: process.env.SMTP_USER, ///defined on Heroku
+        pass: process.env.SMTP_PASSWORD,
       },
     });
     // setup email data with unicode symbols
