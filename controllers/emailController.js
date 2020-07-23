@@ -4,28 +4,23 @@ var nodemailer = require("nodemailer");
 module.exports = {
   send: function (req, res) {
     // create reusable transporter object using the default SMTP transport - TAKEN FROM NODEMAILER DOCS
-    let transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false, // true for 465, false for other ports
+    var transport = nodemailer.createTransport({
+      host: "smtp.mailtrap.io",
+      port: 2525,
       auth: {
-        user: "finalproject2020sydneybootcamp@gmail.com",
-        pass: "finalprojecttest30",
-      },
-      tls: {
-        rejectUnauthorized: false,
+        user: "49b90f37e8fcd9",
+        pass: "a493c0071f14ac",
       },
     });
     // setup email data with unicode symbols
     let mailOptions = {
-      from: '"Nodemailer Contact" <finalproject2020sydneybootcamp@gmail.com>', // sender address
       to: "ameliajanegoodson@gmail.com", // list of receivers
       subject: "Node Contact Request", // Subject line
       text: "Hello world?", // plain text body
       html: output, // html body
     };
     // send mail with defined transport object
-    transporter.sendMail(mailOptions, (error, info) => {
+    transport.sendMail(mailOptions, (error, info) => {
       if (error) {
         return console.log(error);
       }
