@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import axios from "axios";
-import API from "../utils/API";
+import API from "../../utils/API.js";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -53,7 +53,10 @@ const Contact = () => {
             ></textarea>
           </div>
           <div className="row">
-            <button className="submit" onClick={handleFormSubmit}>
+            <button
+              className="submit btn btn-lg btn-primary btn-block"
+              onClick={handleFormSubmit}
+            >
               Submit
             </button>
           </div>

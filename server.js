@@ -1,20 +1,22 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
-// const bodyParser = require("body-parser");
+const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-// const cors = require("cors");
-
+const cors = require("cors");
+const logger = require("morgan");
+const passport = require("passport");
+const dotenv = require("dotenv");
 const app = express();
-const PORT = process.env.PORT || 3001;
+
+dotenv.config();
+
+const PORT = process.env.PORT || 3001; //change to 5001?
 
 // Define middleware here
-app.use(express.urlencoded({ extended: true }));
+app.use(logger("dev"));
+app.use(express.urlencoded({ extended: true })); //should be true or false? Is false on other
 app.use(express.json());
-// app.use(cors());
-// // Body Parser Middleware
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -23,17 +25,45 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 
-// app.get("/", (req, res) => {
-//   res.render("contact");
-// });
-
-// app.post("api/sendemail", (req, res) => {
-//   console.log("with quotes" + req.body);
-
-// Connect to the Mongo DB
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist"
+// Bodyparser middleware
+app.use(bodyParser.json());
+app.use(cors());
+app.use(
+  bodyParser.urlencoded({
+    extended: false,
+  })
 );
+app.use(express.static("public"));
+// Connect to the Mongo Database (DB Config)
+const MONGODB_URI = "";
+const mongoURI = "mongodb://localhost/login";
+
+// Connect to MongoDB
+mongoose
+  .connect(MONGODB_URI || mongoURI, {
+    useNewUrlParser: true,
+    useFindAndModify: false,
+  })
+  .then(() => console.log("MongoDB successfully connected"))
+  .catch(err => console.log(err));
+
+// Passport middleware
+app.use(passport.initialize());
+
+// Passport config
+require("./config/passport")(passport);
+
+// Routes
+app.use(routes);
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
 
 // Start the API server
 app.listen(PORT, function () {

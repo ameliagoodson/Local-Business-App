@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav/Nav.js";
-import Services from "./pages/Services.js";
-import About from "./pages/About.js";
-import Contact from "./pages/Contact.js";
-import Login from "./pages/Login.js";
-import Home from "./pages/Home.js";
-import Booking from "./pages/Booking.js";
+import Services from "./components/pages/Services.js";
+import About from "./components/pages/About.js";
+import Contact from "./components/pages/Contact.js";
+import Login from "./components/Login/Login.js";
+import Home from "./components/pages/Home.js";
+import Booking from "./components/pages/Booking.js";
 
 function App() {
   return (

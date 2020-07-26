@@ -16,6 +16,7 @@ module.exports = {
       from: "ameliajanegoodson@gmail.com",
       to: "amelia.goodson@hotmail.com", // list of receivers
       subject: "Node Contact Request", // Subject line
+      //DO A CONSOLE.LOG
       text: "Hello world?", // plain text body
       // html: output, // html body
     };

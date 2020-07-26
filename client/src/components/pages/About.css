@@ -13,6 +13,8 @@ light grey: #e1d4cb
 .card {
   padding: 10px;
   background-color: #e1d4cb;
+  font-size: 20px;
+  text-align: center;
 }
 .browpicture {
   width: 500px;
