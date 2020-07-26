@@ -4,4 +4,16 @@ Magenta dye: #d30c7b
 Light coral: #f29191
 Tea green: #bee7b8
 Honeydew: #ddf8e8
+light grey: #e1d4cb
 */
+
+.container {
+  margin-top: 40px;
+}
+.card {
+  padding: 10px;
+  background-color: #e1d4cb;
+}
+.browpicture {
+  width: 500px;
+}

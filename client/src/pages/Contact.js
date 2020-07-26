@@ -33,7 +33,7 @@ const Contact = () => {
         <div className="contact-form-header">
           <header className="contact">Quick Contact</header>
         </div>
-        <form className="container">
+        <form className="container-contact">
           <div className="row">
             <input
               type="text"

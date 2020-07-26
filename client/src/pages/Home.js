@@ -6,8 +6,8 @@ function Home() {
   const location = useLocation();
   return (
     <div className="jumbotron">
-      <h1 className="heading">Détendre</h1>
-      <p className="home-text">Experience pure luxury and pampering</p>
+      <h1 className="heading">Cosmetiqua Tattooing</h1>
+      <p className="home-text">Wake up ready for anything!</p>
       <button className="btn-see">
         <Link
           to="/services"

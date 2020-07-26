@@ -1,0 +1,31 @@
+/*COLOUR PALETTE
+Dark sienna: #2e0014
+Magenta dye: #d30c7b
+Light coral: #f29191
+Tea green: #bee7b8
+Honeydew: #ddf8e8
+light grey: #e1d4cb
+*/
+
+.row {
+  margin-top: 10px;
+}
+.card-header {
+  font-size: 22px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  background-color: #e1d4cb;
+  color: #2e0014;
+  outline: none;
+  /* border: solid 1px #f29191; */
+}
+
+.card-header:hover {
+  cursor: pointer;
+}
+.card {
+  background-color: #ddf8e8;
+  margin: 10px;
+  outline: none;
+  border: none;
+}

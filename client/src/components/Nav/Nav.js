@@ -45,7 +45,7 @@ function Nav() {
           Contact
         </Link>
       </li>
-
+      {/* Login link */}
       <li className="nav-item">
         <Link
           to="/login"
@@ -55,6 +55,7 @@ function Nav() {
         >
           Login
         </Link>
+        {/* Booking link */}
       </li>
       <li className="nav-item">
         <Link
