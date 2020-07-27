@@ -1,12 +1,14 @@
 import React from "react";
+import Calendly from "../../components/Calendly/Calendly";
 
 function Booking() {
   return (
     <div>
-      <article>
+      {/* <article>
         <h1>Make a booking</h1>
         <p>Select a date</p>
-      </article>
+      </article> */}
+      <Calendly></Calendly>
     </div>
   );
 }
