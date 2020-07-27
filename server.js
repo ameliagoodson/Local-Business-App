@@ -1,29 +1,25 @@
 const express = require("express");
-const mongoose = require("mongoose");
-const routes = require("./routes");
-const bodyParser = require("body-parser");
-const nodemailer = require("nodemailer");
 const cors = require("cors");
 const logger = require("morgan");
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const routes = require("./routes");
 const passport = require("passport");
-const dotenv = require("dotenv");
 const app = express();
+const dotenv = require("dotenv");
 
 dotenv.config();
 
-const PORT = process.env.PORT || 3001; //change to 5001?
+const PORT = process.env.PORT || 5001;
 
 // Define middleware here
 app.use(logger("dev"));
-app.use(express.urlencoded({ extended: true })); //should be true or false? Is false on other
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-// Add routes, both API and view
-app.use(routes);
 
 // Bodyparser middleware
 app.use(bodyParser.json());
@@ -33,8 +29,9 @@ app.use(
     extended: false,
   })
 );
+
 app.use(express.static("public"));
-// Connect to the Mongo Database (DB Config)
+// DB Config
 const MONGODB_URI = "";
 const mongoURI = "mongodb://localhost/login";
 

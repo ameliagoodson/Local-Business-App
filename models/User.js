@@ -25,6 +25,9 @@ const UserSchema = new Schema({
   },
 });
 
+//Compile model from Schema
+//1st arg: The name of the collection that WILL be created for your model
+//2nd arg: the schema you want to use in creating the model
 const User = mongoose.model("users", UserSchema);
 
 module.exports = User;

@@ -1,6 +1,6 @@
 var nodemailer = require("nodemailer");
 
-// Defining methods for the booksController
+// Defining methods for the emailController
 module.exports = {
   send: function (req, res) {
     // create reusable transporter object using the default SMTP transport - TAKEN FROM NODEMAILER DOCS

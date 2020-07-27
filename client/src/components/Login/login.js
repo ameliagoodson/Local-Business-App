@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { loginUser } from "../UserFunctions/userFunctions";
+import "./Login.css";
+import { Link, useLocation } from "react-router-dom";
 
 class Login extends Component {
   constructor() {
@@ -32,12 +34,26 @@ class Login extends Component {
   }
 
   render() {
+    // const location = useLocation();
     return (
       <div className="container">
         <div className="row">
           <div className="col-md-6 mt-5 mx-auto">
-            <form noValidate onSubmit={this.onSubmit}>
-              <h1 className="h3 mb-3 font-weight normal">Please Sign in</h1>
+            <form noValidate onSubmit={this.onSubmit} className="loginForm">
+              <div>
+                <h1 className="h3 mb-3 font-weight normal signupText">
+                  Please sign in or
+                </h1>
+                <button className="btn btn-lg btn-primary signupBtn">
+                  <Link
+                    // to="/register"
+                    // className={location.pathname === "/register"}
+                    className="Signup"
+                  >
+                    Sign up
+                  </Link>
+                </button>
+              </div>
               <div className="form-group">
                 <label htmlFor="email">Email Address</label>
                 <input
@@ -75,16 +91,3 @@ class Login extends Component {
 }
 
 export default Login;
-
-// import React from "react";
-
-// function Login() {
-//   return (
-//     <div>
-//       <h1>Login</h1>
-//       <p>Login details</p>
-//     </div>
-//   );
-// }
-
-// export default Login;
