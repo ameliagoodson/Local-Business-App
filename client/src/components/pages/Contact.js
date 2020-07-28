@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Contact.css";
 import axios from "axios";
 import API from "../../utils/API.js";
+import Icon from "./assets/icon-face.png";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -29,11 +30,12 @@ const Contact = () => {
   };
   return (
     <div>
-      <div className="container-contact-form fluid">
-        <div className="contact-form-header">
+      <div className="container-contact">
+        {/* <div className="contact-form-header">
           <header className="contact">Quick Contact</header>
-        </div>
-        <form className="container-contact">
+        </div> */}
+        <form className="form-contact">
+          <div>Quick Contact</div>
           <div className="row">
             <input
               type="text"

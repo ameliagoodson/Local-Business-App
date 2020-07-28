@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/journal/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="./index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Norican&family=Raleway&display=swap"
       rel="stylesheet"
@@ -20,23 +21,26 @@
     <title>Local Business App</title>
   </head>
 
-  <body>
-    <!-- Calendly inline widget begin -->
+  <body style="height: 100%;">
+    <div id="page-container">
+      <div id="content-wrap">
+        <!-- Calendly inline widget begin -->
+        <script
+          type="text/javascript"
+          src="https://assets.calendly.com/assets/external/widget.js"
+        ></script>
+        <!-- Calendly inline widget end -->
+        <noscript>
+          You need to enable JavaScript to run this app.
+        </noscript>
+        <div id="root"></div>
+        <!-- Calendly inline widget begin -->
 
-    <script
-      type="text/javascript"
-      src="https://assets.calendly.com/assets/external/widget.js"
-    ></script>
-    <!-- Calendly inline widget end -->
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!-- Calendly inline widget begin -->
-
-    <script
-      type="text/javascript"
-      src="https://assets.calendly.com/assets/external/widget.js"
-    ></script>
+        <script
+          type="text/javascript"
+          src="https://assets.calendly.com/assets/external/widget.js"
+        ></script>
+      </div>
+    </div>
   </body>
 </html>

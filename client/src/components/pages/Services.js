@@ -4,6 +4,7 @@ import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Footer from "../Footer/Footer";
 import BrowMicroblade from "./assets/brow-microblade.png";
 import BrowCombo from "./assets/brow-combo.png";
 import BrowTattoo from "./assets/brow-tattoo.png";
@@ -18,7 +19,7 @@ import "./Services.css";
 function Services() {
   return (
     <div>
-      <Container className="container">
+      <Container className="container-services">
         <Accordion>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="0">
@@ -115,6 +116,55 @@ function Services() {
               Eyeliner tattooing
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="2">
+              <Card.Body>
+                <Row className="row">
+                  <Col className="colHeading">Traditional eyeliner</Col>
+                  <Col>
+                    A fine eyeliner is a ‘classic’ and a good choice for most
+                    eye shapes. It provides subtle definition while eliminating
+                    the bland, naked-eye look that many women with few eyelashes
+                    have. It’s a timeless look that never looks outdated.
+                  </Col>
+                  <Col>
+                    <img src={LashReg}></img>
+                  </Col>
+                  <Col>$400</Col>
+                </Row>
+                <Row className="row">
+                  <Col className="colHeading">Winged eyeliner</Col>
+                  <Col>
+                    Women who prefer bolder, dramatic makeup usually request
+                    thicker eyeliners with winged tails at either straight or
+                    upward angles depending on the effect desired. The shape and
+                    thickness is custom designed to the individual client
+                    requirements with many colours available to choose from.
+                  </Col>
+                  <Col>
+                    <img src={LashWing}></img>
+                  </Col>
+                  <Col>$450</Col>
+                </Row>
+                <Row className="row">
+                  <Col className="colHeading">Invisible lash liner</Col>
+                  <Col>
+                    “Lash Enhancement” creates undetectable definition for eyes.
+                    Unlike traditional eyeliner tattooing (in which ink is
+                    embedded “above” the lash line) Invisible Liner uses small
+                    needles to dot and fill “within” and around the lash bed.
+                  </Col>
+                  <Col>
+                    <img src={LashInvis}></img>
+                  </Col>
+                  <Col>$300</Col>
+                </Row>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+          <Card>
+            <Accordion.Toggle as={Card.Header} eventKey="3">
+              Another service here
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey="3">
               <Card.Body>
                 <Row className="row">
                   <Col className="colHeading">Traditional eyeliner</Col>

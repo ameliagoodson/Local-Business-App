@@ -36,7 +36,7 @@ class Login extends Component {
   render() {
     // const location = useLocation();
     return (
-      <div className="container">
+      <div className="container-login">
         <div className="row">
           <div className="col-md-6 mt-5 mx-auto">
             <form noValidate onSubmit={this.onSubmit} className="loginForm">

@@ -1,6 +1,15 @@
+/*COLOUR PALETTE
+Dark sienna: #2e0014
+Magenta dye: #d30c7b
+Light coral: #f29191
+Tea green: #bee7b8
+Honeydew: #ddf8e8
+light grey: #e1d4cb
+*/
+
 .list-overflow-container {
   max-height: 545px;
-  border: 1px #DDDDDD solid;
+  border: 1px #dddddd solid;
   border-radius: 4px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -21,7 +30,7 @@
 }
 
 .list-overflow-container li a {
-  color: #2A878C;
+  color: #2a878c;
 }
 
 .list-overflow-container li:first-child {
