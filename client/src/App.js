@@ -4,7 +4,7 @@ import Nav from "./components/Nav/Nav.js";
 import Services from "./components/pages/Services.js";
 import About from "./components/pages/About/About.js";
 import Contact from "./components/pages/Contact.js";
-import Login from "./components/Login/Login.js";
+import Login from "./components/Login/Login";
 import Home from "./components/pages/Home.js";
 import Booking from "./components/pages/Booking.js";
 import Register from "./components/Register/register.js";

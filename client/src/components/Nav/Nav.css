@@ -37,6 +37,9 @@ light grey: #e1d4cb
   margin: 3px;
   color: #2e0014;
 }
+.brand:hover {
+  color: white;
+}
 .nav-tabs,
 .nav-link,
 .nav-item,
