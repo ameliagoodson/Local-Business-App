@@ -1,0 +1,39 @@
+.div-calendly {
+  width: 600px;
+  float: right;
+}
+.card-calendly {
+  min-width: 30vw;
+  background-color: #e1d4cb;
+  padding: 20px;
+  font-family: "Raleway", sans-serif;
+  min-height: 300px;
+  border-radius: 30px;
+}
+.btn-see {
+  padding: 7px;
+  background-color: #ddf8e8;
+  color: #d30c7b;
+  width: 150px;
+  font-size: 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+  border: solid #bee7b8 3px;
+}
+.heading-calendly {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin: auto;
+}
+.text-calendly {
+  text-align: center;
+}
+.icon-cal {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}

@@ -14,17 +14,25 @@ body {
   background-repeat: no-repeat;
   height: 70vh;
 }
-.heading {
+.heading-home {
   color: #2e0014;
   font-weight: bold;
-  font-size: 38px;
-  font-family: "Raleway", sans-serif;
+  font-size: 35px;
+  font-family: "Cinzel", serif;
+  display: inline-block;
 }
 .home-text {
   color: #2e0014;
-  font-size: 32px;
-  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-family: "Raleway", sans-serif !important;
   /* font-family: "Norican", cursive; */
+}
+.icon-face {
+  height: 70px;
+  width: 70px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 .btn-see {
   padding: 7px;
@@ -41,4 +49,18 @@ body {
 .btn-see-link:hover {
   text-decoration: none;
   color: #d30c7b;
+}
+.img1,
+.img2,
+.img3 {
+  height: 600px;
+}
+.carousel-subtitle {
+  font-size: 45px;
+}
+.carousel-heading {
+  margin-bottom: 20px;
+}
+.carousel-subtitle {
+  margin-bottom: 50px;
 }

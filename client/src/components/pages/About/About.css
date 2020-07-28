@@ -8,7 +8,7 @@ light grey: #e1d4cb
 */
 
 .container-about {
-  margin-top: 40px;
+  margin-top: 30px;
   min-width: 70vw;
 }
 .card-about {
@@ -16,12 +16,28 @@ light grey: #e1d4cb
   background-color: #e1d4cb;
   font-size: 20px;
   text-align: center;
+  margin: auto;
 }
-
+.heading-about {
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: "Cinzel", serif;
+  display: inline-block;
+  /* text-align: center; */
+}
 .text-about {
   font-size: 18px;
+  margin: auto;
+  margin-top: 10px;
 }
 .browpicture {
   max-width: 95%;
   max-height: 90%;
+}
+.icon-about {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  margin-left: 20px;
+  /* margin: auto; */
 }

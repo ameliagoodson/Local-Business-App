@@ -14,11 +14,13 @@ light grey: #e1d4cb
   color: #2e0014;
   font-size: 20px;
   padding-top: 5px;
+  font-family: "Raleway", sans-serif;
 }
 .nav-link {
   color: #2e0014;
   margin: 0 20px 0 20px;
-  font-size: 16px;
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
 }
 .nav-item {
   border-left: #ddf8e8 solid 1px;
@@ -28,6 +30,12 @@ light grey: #e1d4cb
 .nav-link:hover {
   color: white;
   border: none;
+}
+.brand {
+  font-family: "Cinzel", serif;
+  font-size: 18px;
+  margin: 3px;
+  color: #2e0014;
 }
 .nav-tabs,
 .nav-link,
@@ -44,6 +52,7 @@ light grey: #e1d4cb
 .nav-tabs {
   border: none;
 }
-/* .nav {
-  border-bottom: 5px solid #d30c7b;
-} */
+.icon-home {
+  width: 40px;
+  height: 40px;
+}

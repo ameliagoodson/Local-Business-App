@@ -11,12 +11,31 @@
   display: inline !important;
   margin-left: 30px;
   color: white;
+  font-family: "Cinzel", serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.btnin {
+  font-family: "Cinzel", serif;
+  text-align: center;
 }
 
 .signupText {
   display: inline;
+  font-size: 25px;
+  font-family: "Cinzel", serif;
+  text-align: center;
+}
+.icon-login {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  /* margin: auto; */
 }
 
 .Signup {
   color: white;
+  margin: auto;
 }

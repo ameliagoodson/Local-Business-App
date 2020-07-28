@@ -10,14 +10,30 @@ light grey: #e1d4cb
 .row {
   margin-top: 10px;
 }
+.accordion-header {
+  /* margin: auto; */
+  text-align: center;
+  margin-top: 10px;
+}
+.accordion-services {
+  font-size: 25px;
+  font-family: "Cinzel", serif;
+  text-align: center;
+  display: inline-block;
+}
 .card-header {
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   background-color: white;
-  color: #f29191;
+  color: #2e0014;
   outline: none;
   border: none;
+  margin: auto;
+  display: inline-block;
+}
+.card-services.card {
+  margin-top: 30px;
 }
 
 .card-header:hover {
@@ -28,4 +44,15 @@ light grey: #e1d4cb
   margin: 10px;
   outline: none;
   border: none;
+}
+
+.icon-price {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  margin: auto;
+  margin-left: 10px;
+}
+.card-services {
+  background-color: #e1d4cb;
 }

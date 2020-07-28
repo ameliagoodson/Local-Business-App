@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { loginUser } from "../UserFunctions/userFunctions";
 import "./Login.css";
 import { Link, useLocation } from "react-router-dom";
+import LoginIcon from "../pages/assets/login.png";
 
 class Login extends Component {
   constructor() {
@@ -53,6 +54,11 @@ class Login extends Component {
                     Sign up
                   </Link>
                 </button>
+                <img
+                  className="icon-login"
+                  src={LoginIcon}
+                  alt="website logo"
+                />
               </div>
               <div className="form-group">
                 <label htmlFor="email">Email Address</label>
@@ -78,7 +84,7 @@ class Login extends Component {
               </div>
               <button
                 type="submit"
-                className="btn btn-lg btn-primary btn-block"
+                className="btn btn-lg btn-primary btn-block btnin"
               >
                 Sign in
               </button>

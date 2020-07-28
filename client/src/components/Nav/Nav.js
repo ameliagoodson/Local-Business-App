@@ -2,23 +2,23 @@ import React from "react";
 import "./Nav.css";
 // import "../";
 import { Link, useLocation } from "react-router-dom";
-// import Icon from "";
-import Icon from "../pages/assets/icon-face.png";
+import HomeIcon from "../pages/assets/face.png";
 
-console.log(Icon);
+// console.log(Icon);
 
 function Nav() {
   const location = useLocation();
 
   return (
     <ul className="nav nav-tabs">
-      <li>img src={Icon}</li>
       <li className="nav-item">
         <Link
           to="/"
           className={location.pathname === "/" ? "nav-link active" : "nav-link"}
+          className="brand"
         >
-          Home
+          <img className="icon-home" src={HomeIcon} alt="website logo" />
+          Cosmetiqua Tattooing
         </Link>
       </li>
       <li className="nav-item">
@@ -28,7 +28,7 @@ function Nav() {
             location.pathname === "/services" ? "nav-link active" : "nav-link"
           }
         >
-          Services <Icon></Icon>
+          Services
         </Link>
       </li>
       <li className="nav-item">

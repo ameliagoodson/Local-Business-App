@@ -3,6 +3,7 @@ import "./Contact.css";
 import axios from "axios";
 import API from "../../utils/API.js";
 import Icon from "./assets/icon-face.png";
+import ContactIcon from "../pages/assets/contact.png";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -31,11 +32,9 @@ const Contact = () => {
   return (
     <div>
       <div className="container-contact">
-        {/* <div className="contact-form-header">
-          <header className="contact">Quick Contact</header>
-        </div> */}
         <form className="form-contact">
-          <div>Quick Contact</div>
+          <h1 className="heading-contact">Quick Contact</h1>
+          <img className="icon-contact" src={ContactIcon} alt="website logo" />
           <div className="row">
             <input
               type="text"
