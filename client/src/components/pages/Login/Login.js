@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { loginUser } from "../UserFunctions/userFunctions";
+import { loginUser } from "../../UserFunctions/userFunctions";
 import "./Login.css";
 import { Link, useLocation } from "react-router-dom";
-import LoginIcon from "../pages/assets/login.png";
+import LoginIcon from "../assets/login.png";
 
 class Login extends Component {
   constructor() {
