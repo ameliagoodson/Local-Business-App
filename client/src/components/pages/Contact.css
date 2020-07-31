@@ -28,23 +28,22 @@ form {
 }
 input {
   width: 500px;
-  margin: auto;
-  margin: 10px;
-  padding: 5px;
+  margin: 5px 10px 5px 10px;
+  padding: 6px 16px;
   border: none;
+  border-radius: 0.25rem;
 }
 textarea {
   height: 100px;
   margin: auto;
   margin: 10px;
   width: 500px;
-  padding: 5px;
+  padding: 6px 16px;
   border: none;
+  border-radius: 0.25rem;
 }
 .submit {
-  margin: auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 5px 10px;
   padding: 5px;
   font-family: "Cinzel", serif;
 }
