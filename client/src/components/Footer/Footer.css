@@ -6,7 +6,45 @@ Tea green: #bee7b8
 Honeydew: #ddf8e8
 light grey: #e1d4cb
 */
-.page-container {
+
+.footer {
+  /* margin-top: 1rem;
+  padding: 1rem; */
+  background-color: white;
+  /* position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; */
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --space: 1.5em 0;
+  --space: 2em 0;
+}
+
+.app-site {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  /* usually this would be 100vh */
+}
+
+.site-content {
+  flex: 1 0 auto;
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+}
+
+.site-content:after {
+  content: "\00a0";
+  display: block;
+  margin-top: var(--space);
+  height: 0;
+  visibility: hidden;
+}
+
+/* .page-container {
   position: relative;
   min-height: 50vh;
 }
@@ -18,20 +56,3 @@ light grey: #e1d4cb
   position: absolute;
   min-height: 50vh;
   /* padding-bottom: 3rem; */
-}
-
-.footerrow,
-.footer {
-  clear: both;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  /* position: relative;
-  height: 200px;
-  margin-top: -200px; */
-  background-color: white;
-  color: #d30c7b;
-  font-family: "Raleway", sans-serif;
-}

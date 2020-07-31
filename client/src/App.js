@@ -9,23 +9,26 @@ import Home from "./components/pages/Home.js";
 import Booking from "./components/pages/Booking/Booking.js";
 import Register from "./components/Register/register.js";
 import Footer from "./components/Footer/Footer";
+import "./components/Footer/Footer.css";
 
 function App() {
   return (
     <Router>
-      <div>
-        <Nav />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/services" component={Services} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/booking" component={Booking} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/register" component={Register} />
-        </Switch>
-        <Footer />
+      <div className="app-site">
+        <div className="site-content">
+          <Nav />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/services" component={Services} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/booking" component={Booking} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/register" component={Register} />
+          </Switch>
+        </div>
       </div>
+      <Footer />
     </Router>
   );
 }
