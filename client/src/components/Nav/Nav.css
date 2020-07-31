@@ -46,7 +46,7 @@ light grey: #e1d4cb
 .nav-item.show,
 .nav-link.active {
   background-color: #f29191 !important;
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
 }
 .nav-link.active {
   border: none;

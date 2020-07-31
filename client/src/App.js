@@ -7,7 +7,7 @@ import Contact from "./components/pages/Contact.js";
 import Login from "./components/pages/Login/Login";
 import Home from "./components/pages/Home.js";
 import Booking from "./components/pages/Booking/Booking.js";
-import Register from "./components/Register/register.js";
+import Register from "./components/pages/Register/register.js";
 import Footer from "./components/Footer/Footer";
 import "./components/Footer/Footer.css";
 

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { registerUser, getUsers } from "../UserFunctions/userFunctions";
+import { registerUser, getUsers } from "../../UserFunctions/userFunctions";
+import "./Register.css";
 
 class Register extends Component {
   constructor(props) {
@@ -118,7 +119,9 @@ class Register extends Component {
         <div className="row">
           <div className="col-md-6 mt-5 mx-auto">
             <form noValidate onSubmit={this.onSubmit}>
-              <h1 className="h3 mb-3 font-weight normal">Please Sign in</h1>
+              <h1 className="h3 mb-3 font-weight normal heading-signup">
+                Please Sign in
+              </h1>
               <div className="form-group">
                 <label htmlFor="first_name">First Name</label>
                 <input
