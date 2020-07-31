@@ -1,3 +1,8 @@
 .heading-signup {
   font-family: "Cinzel", serif;
+  text-align: center;
+}
+
+.form-control {
+  margin: 0px;
 }

@@ -61,7 +61,7 @@ class Login extends Component {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="email">Email Address</label>
+                {/* <label htmlFor="email">Email Address</label> */}
                 <input
                   type="email"
                   className="form-control"
@@ -72,7 +72,7 @@ class Login extends Component {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="password">Password</label>
+                {/* <label htmlFor="password">Password</label> */}
                 <input
                   type="password"
                   className="form-control"

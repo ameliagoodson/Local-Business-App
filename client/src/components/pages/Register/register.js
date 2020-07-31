@@ -120,10 +120,10 @@ class Register extends Component {
           <div className="col-md-6 mt-5 mx-auto">
             <form noValidate onSubmit={this.onSubmit}>
               <h1 className="h3 mb-3 font-weight normal heading-signup">
-                Please Sign in
+                Signup
               </h1>
               <div className="form-group">
-                <label htmlFor="first_name">First Name</label>
+                {/* <label htmlFor="first_name">First Name</label> */}
                 <input
                   type="text"
                   refs="first_name"
@@ -138,7 +138,7 @@ class Register extends Component {
                 </span>
               </div>
               <div className="form-group">
-                <label htmlFor="last_name">Last Name</label>
+                {/* <label htmlFor="last_name">Last Name</label> */}
                 <input
                   type="text"
                   refs="last_name"
@@ -153,7 +153,7 @@ class Register extends Component {
                 </span>
               </div>
               <div className="form-group">
-                <label htmlFor="email">Email Address</label>
+                {/* <label htmlFor="email">Email Address</label> */}
                 <input
                   type="email"
                   refs="email"
@@ -168,7 +168,7 @@ class Register extends Component {
                 </span>
               </div>
               <div className="form-group">
-                <label htmlFor="password">Password</label>
+                {/* <label htmlFor="password">Password</label> */}
                 <input
                   type="password"
                   refs="password"
