@@ -47,7 +47,7 @@ class Login extends Component {
                 </h1>
                 <button className="btn btn-lg btn-primary signupBtn">
                   <Link
-                    // to="/register"
+                    to="/register"
                     // className={location.pathname === "/register"}
                     className="Signup"
                   >
