@@ -12,43 +12,29 @@ const Footer = () => (
     <Container>
       <Row>
         <Col>
-          <h5 className="title">Footer Content</h5>
-          <p>
-            Here you can use rows and columns here to organize your footer
-            content.
-          </p>
+          <h5 className="footer-title">Cosmetiqua Tattooing</h5>
+          <p>Wake up beautiful</p>
         </Col>
         <Col>
-          <ul>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
+          <ul className="links-list">
+            <li>
+              <a href="/services" className="footer-link">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="/about" className="footer-link">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="/contact" className="footer-link">
+                Contact
+              </a>
+            </li>
           </ul>
         </Col>
       </Row>
-      {/* <ul>
-            <li>
-              <a href="#!" className="footer-link">
-                Link 1
-              </a>
-            </li>
-            <li>
-              <a href="#!" className="footer-link">
-                Link 2
-              </a>
-            </li>
-            <li>
-              <a href="#!" className="footer-link">
-                Link 3
-              </a>
-            </li>
-            <li>
-              <a href="#!" className="footer-link">
-                Link 4
-              </a>
-            </li>
-          </ul> */}
     </Container>
   </div>
 );

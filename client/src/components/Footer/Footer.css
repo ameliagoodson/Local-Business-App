@@ -8,16 +8,26 @@ light grey: #e1d4cb
 */
 
 .footer {
-  /* margin-top: 1rem;
-  padding: 1rem; */
   background-color: white;
-  /* position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%; */
+  width: 100%;
   font-family: "Raleway", sans-serif;
+  color: #d30c7b;
+  padding: 10px;
+}
+.footer-link {
+  color: #d30c7b;
+  margin-left: 0px;
+}
+.footer-title {
+  font-family: "Cinzel", serif;
+  color: #2e0014;
 }
 
+.links-list {
+  list-style-type: none;
+}
+
+/* Links to App.js and styles the 'body' of the React application to enable the footer to be sticky */
 :root {
   --space: 1.5em 0;
   --space: 2em 0;

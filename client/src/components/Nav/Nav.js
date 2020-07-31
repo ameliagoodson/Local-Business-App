@@ -1,10 +1,7 @@
 import React from "react";
 import "./Nav.css";
-// import "../";
 import { Link, useLocation } from "react-router-dom";
 import HomeIcon from "../pages/assets/face.png";
-
-// console.log(Icon);
 
 function Nav() {
   const location = useLocation();
