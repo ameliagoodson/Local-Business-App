@@ -30,6 +30,7 @@ light grey: #e1d4cb
 .nav-link:hover {
   color: white;
   border: none;
+  text-decoration: none;
 }
 .brand {
   font-family: "Cinzel", serif;
@@ -39,6 +40,7 @@ light grey: #e1d4cb
 }
 .brand:hover {
   color: white;
+  text-decoration: none;
 }
 .nav-tabs,
 .nav-link,

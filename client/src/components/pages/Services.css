@@ -55,4 +55,6 @@ light grey: #e1d4cb
 }
 .card-services {
   background-color: #e1d4cb;
+  border-radius: 30px;
+  padding-bottom: 10px;
 }
