@@ -15,7 +15,7 @@ class Register extends Component {
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
-
+  // Validation
   handleValidation() {
     let errors = {};
     let formIsValid = true;
@@ -82,11 +82,11 @@ class Register extends Component {
       password: this.state.password,
     };
     var result = this.handleValidation();
-    console.log(result); //logs 'true'
+    console.log(result); //logs 'true' = as it should
     if (this.handleValidation()) {
       getUsers().then(data => {
-        console.log(data); // UNDEFINED
-        var destination = data
+        console.log(data); // data is the HTML root index doc - SHOULD be object data of users
+        var destination = data ///THIS IS THE ERROR
           .map(element => {
             if (element.email === this.state.email) {
               console.log("foundmatch");

@@ -12,11 +12,14 @@ const validateLoginInput = require("../../validation/login"); //??
 
 // Load User model
 const User = require("../../models/User");
+console.log(User);
+console.log("testing whether User model is loaded)");
 router.use(cors());
 process.env.SECRET_KEY = "secret";
 
 router.post("/api/register", (req, res) => {
   // Form validation
+  console.log("user routes post working");
   const { errors, isValid } = validateRegisterInput(req.body);
 
   // Check validation

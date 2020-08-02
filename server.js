@@ -20,7 +20,6 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/public"));
 }
-//was "client/public"
 
 // Bodyparser middleware
 app.use(bodyParser.json());
@@ -32,9 +31,10 @@ app.use(
 );
 
 app.use(express.static("public"));
-// DB Config
+
+// Database configuration
 const MONGODB_URI = "";
-const mongoURI = "mongodb://localhost/login";
+const mongoURI = "mongodb://localhost/obviousdatabaes";
 
 // Connect to MongoDB
 mongoose
