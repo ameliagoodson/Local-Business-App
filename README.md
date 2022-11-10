@@ -2,8 +2,6 @@
 
 A one-size-fits all app designed for local businesses to adapt to their unique service
 
-[Click to see deployed site](https://mysterious-citadel-51975.herokuapp.com/)
-
 ![image](https://user-images.githubusercontent.com/60428536/88887798-780d3600-d280-11ea-9dd0-e29f0b2e7532.png)
 
 # Description
@@ -27,26 +25,6 @@ Run:
 to install all of the dependencies required to run this app.
 Start: \*_npm start_
 to start the app once all of the dependencies have been installed.
-
-# Further development planned
-
-- Make mobile responsive
-- Work required on contact form and nodemailer to improve functionality
-- Work required on user login and Mongoose to achieve functionality
-- Add social media logins:
-  - Google
-  - Facebook
-  - Other?
-- Add user profile functionality:
-  - Add items
-  - Delete items
-- Add Google Maps API so that the business address is shown on map in the Contact page
-- Make generic verison of app with dummy text (lorem ipsum) only
-- Add admin login so that they can view and manage users and collect associated data
-
-# Link to Deployed Website
-
-[Deployed website link](https://mysterious-citadel-51975.herokuapp.com/)
 
 # Additional Images
 
